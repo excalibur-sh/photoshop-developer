@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Silkscreen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Fjalla+One&family=Kenia&family=Lato:wght@900&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* ==========================NAVBAR CSS======================== */
+
+.nav {
+    display: flex;
+    padding: 0rem 8.7rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .left .left-img {
+    width: 10rem;
+    padding-top: .2rem;
+}
+
+
+.nav .center ul li {
+    list-style: none;
+    display: inline;
+    padding: 1rem;
+}
+
+.nav .center ul li a {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+.nav .right .btn {
+    cursor: pointer;
+    padding: .7rem 1.2rem;
+    background: none;
+    border: 2.2px solid black;
+    border-radius: 4rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.nav .right .btn-1 {
+    border: none;
+}
+
+.nav .right .btn-2 {
+    padding: .7rem 1.5rem;
+}
+
+/* ===========================HOME CSS============================= */
+
+
+.home-content {
+    height: 100%;
+    padding: 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-content .left .text {
+    padding-left: 5rem;
+}
+
+.home-content .left .text .span {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-content .left .text span {
+    color: crimson;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.home-content .left .text h1 {
+    font-size: 4.5rem;
+    margin-bottom: .5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+
+.home-content .left .text p {
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.8rem;
+    width: 38rem;
+}
+
+
+.home-content .left a .home-btn {
+    cursor: pointer;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: .8rem 1.5rem;
+}
+
+.home-content .left .icon {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.home-content .left .icon .img-icon {
+    width: 2.5rem;
+    margin-left: .8rem;
+}
+
+.home-content .left .icon .icon-1 {
+    margin-left: 0rem;
+}
+
+.home-content .left .icon .icon-2 {
+    width: 1.9rem;
+}
+
+.home-content .left .icon .icon-3 {
+    width: 1.9rem;
+}
+
+
+.home-content .right .right-img {
+    width: 33rem;
+}
+
+/* =========================FOOTER CSS=========================== */
+
+hr {
+    background-color: #3e3e3e;
+    height: .2rem;
+    width:85%;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: crimson;
+}
+footer a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: crimson;
+    text-decoration: none;
+    padding: 0rem .2rem;
+    transition: all 0.3s ease;
+}
+footer a:hover{
+    color: blue;
+}
+
+
+
+/* ====================MEDIA QUERY====================== */
+
+@media (max-width:650px) {
+    #home {
+        height: 92vh;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .home-content .left .text {
+        padding: 0rem 2rem;
+    }
+
+    .home-content .left .text h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content .left .text p {
+        width: 20rem;
+    }
+
+    .home-content .left .icon {
+        justify-content: center;
+    }
+
+
+    .home-content .right .right-img {
+        display: none;
+    }
+
+
+    hr{
+        height: .1rem;
+        width: 95%;
+    }
+    footer{
+        color: black;
+        width: 24rem;
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 0rem;
+        font-size: 1rem;
+        font-weight: 0;
+    }
+
+    footer a{
+        font-size: 1rem;
+        color: blue;
+        text-decoration: none;
+        padding: 0rem .2rem;
+    }
+}
